@@ -6,7 +6,7 @@ TEST=
 PARAMETERS=
 
 build:
-	${PYTHON} setup.py build ${PARAMETERS}
+	${PYTHON} setup.py --with-libyaml build ${PARAMETERS}
 
 buildext:
 	${PYTHON} setup.py --with-libyaml build ${PARAMETERS}
@@ -18,7 +18,7 @@ forceext:
 	${PYTHON} setup.py --with-libyaml build -f ${PARAMETERS}
 
 install:
-	${PYTHON} setup.py install ${PARAMETERS}
+	${PYTHON} setup.py --with-libyaml install ${PARAMETERS}
 
 installext:
 	${PYTHON} setup.py --with-libyaml install ${PARAMETERS}
